@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tugas KK4B jQuery</title>
+	<script type="text/javascript" src="jquey.js"></script>
+</head>
+<body>
+
+	<h1>Panel Masuk</h1>
+
+	<br><br>
+
+<form>
+	<label>Nama Pengguna</label>
+	<br><br>
+	<input type="text" name="">
+
+	<br><br>
+
+	<label>Kata Sandi</label>
+	<br><br>
+	<input type="password" name="" class="pass">
+
+	<br>
+
+	<input type="checkbox" name="" class="cbox"> Tujukan Kata Sandi
+	
+	<br>
+
+	<button>Masuk</button>
+</form>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+	
+	$('.cbox').click(function(){
+		if($(this).is(':checked')){
+			$('.pass').attr('type','text');
+		}
+		else{
+			$('.pass').attr('type','password');
+		}
+	})
+
+});
+	
+</script>
+</body>
+</html>
